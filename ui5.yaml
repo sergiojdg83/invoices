@@ -14,8 +14,8 @@ server:
           path:
             - /resources
             - /test-resources
-          url: https://fiori.sap.etecsa.cu
-          version: # The UI5 version, for instance, 1.78.1. Empty string means latest version
+          url: http://sapfioriprod.etecsa.cu:8000/sap/bc/ui5_ui5/sap/zevents # url: https://fiori.sap.etecsa.cu
+          version: "" # The UI5 version, for instance, 1.78.1. Empty string means latest version
         backend:
           - path: /sap
             url: http://localhost
