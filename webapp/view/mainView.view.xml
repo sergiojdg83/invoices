@@ -10,10 +10,10 @@
                 <Page id="page" title="{i18n>title}">
                     <content>
          <!--<Text text="Hello World"> </Text>  -->
-                     <Panel headerText="Selection Screen">
-                     <Label id="labelShipName" labelFor="shipName" text="Ship Name" class="sapUiSmallMargin"/>
+                     <Panel headerText="{i18n>selectionScreen}">
+                     <Label id="labelShipName" labelFor="shipName" text="{i18n>shipName}" class="sapUiSmallMargin" /> 
                      <Input id="shipName" width="200px" class="sapUiSmallMarginEnd"/>
-                     <Label id="labelCountry" labelFor="shipName" text="Country" class="sapUiSmallMargin"/>
+                     <Label id="labelCountry" labelFor="shipName" text="{i18n>country}" class="sapUiSmallMargin"/>
                      </Panel>
                     </content>
                 </Page>
