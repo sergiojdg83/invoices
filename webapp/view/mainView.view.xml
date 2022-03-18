@@ -13,7 +13,7 @@
          <!--<Text text="Hello World"> </Text>  -->
                      <Panel headerText="{i18n>selectionScreen}">
                      <Label id="labelShipName" labelFor="shipName" text="{i18n>shipName}" class="sapUiSmallMargin" /> 
-                     <Input id="shipName" width="200px" class="sapUiSmallMarginEnd"/>
+                     <Input id="shipName" value="{selectionScreen>/ShipName}"   width="200px" class="sapUiSmallMarginEnd"/>
                      <Label id="labelCountry" text="{i18n>country}" class="sapUiSmallMargin"/>
                      <Select id="slCountry" selectedKey="{selectionScreen>/CountryKey}" 
                                          forceSelection="false" 
@@ -21,7 +21,37 @@
                         <items>
                             <core:Item key="{selectionScreen>key}" text="{selectionScreen>text}"/>
                         </items>                          
-                     </Select> 
+                     </Select>                     
+                     <Button id="btnFilters" 
+                           text="{i18n>btnFilter}" 
+                           icon="sap-icon://filter" 
+                           press="onFilter" 
+                           class="sapUiSmallMarginEnd" />                          
+                     <Button id="btnClearFilters" 
+                           text="{i18n>btnClearFilters}" 
+                           icon="sap-icon://clear-filter" 
+                           press="onClearFilter" 
+                           class="sapUiSmallMarginEnd"/>      
+                     </Panel>
+                     <Panel>
+                       <LIST id="invoicesList" 
+                             headerText="{i18n>invoicesHeaderList}" 
+                             width="auto" 
+                             items="{invoicesList>/List}">
+                        <items>
+                          <objectListItem title="{invoicesList>ShipName} - {invoicesList>Country}"
+                                          number="{ parts : [ {path: 'invoicesList>Price'},
+                                                              {path: 'selectionScreen>/Currency'}],
+                                                    type  : 'sap.ui.model.type.Currency',
+                                                    formatOptions: {
+                                                        showMeasure : false
+                                                    }}"
+                                          numberUnit="{selectionScreen>/Currency}" 
+                                          numberState="{= ${invoicesList>Price} > 100 ? 'Success' : 'Warning'}">
+                            
+                          </objectListItem>                          
+                        </items>  
+                       </LIST>
                      </Panel>
                     </content>
                 </Page>

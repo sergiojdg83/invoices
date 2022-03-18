@@ -1,0 +1,34 @@
+{
+    "List": [
+        {
+            "ShipName": "Sergio",
+            "Country": "Cuba",
+            "Price": "50.20"
+        },
+        {
+            "ShipName": "Daniela",
+            "Country": "UK",
+            "Price": "105.87"
+        }, 
+        {
+            "ShipName": "Ivana",
+            "Country": "Usa",
+            "Price": "70.13"
+        },        
+        {
+            "ShipName": "Sofia",
+            "Country": "Canada",
+            "Price": "250.58"
+        },
+        {
+            "ShipName": "Maytana",
+            "Country": "Rusia",
+            "Price": "1.45"
+        },
+        {
+            "ShipName": "Haytana",
+            "Country": "Cuba",
+            "Price": "101.35"
+        }
+    ]
+}
