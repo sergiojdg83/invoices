@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=https://sap.github.io/ui5-tooling/schema/ui5.yaml.json
+
+specVersion: "2.5"
+metadata:
+  name: logaligroup.invoices
+type: application
+builder:
+  resources:
+    excludes:
+      - /test/**
+      - /localService/**
+  customTasks:
+    - name: deploy-to-abap
+      afterTask: generateCachebusterInfo
+      configuration:
+        target:
+          url: http://192.168.97.58:8000
+          client: "100"
+        app:
+          name: Z_INV_LIST_S
+          description: Z_INVOICESLIST_S
+          package: ZTEST_FIORI
+          transport: FIPK900064

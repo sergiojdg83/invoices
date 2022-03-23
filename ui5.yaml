@@ -1,5 +1,3 @@
-# yaml-language-server: $schema=https://sap.github.io/ui5-tooling/schema/ui5.yaml.json
-
 specVersion: "2.5"
 metadata:
   name: logaligroup.invoices
@@ -9,13 +7,13 @@ server:
     - name: fiori-tools-proxy
       afterMiddleware: compression
       configuration:
-        ignoreCertError: false # If set to true, certificate errors will be ignored. E.g. self-signed certificates will be accepted
+        ignoreCertError: false
         ui5:
           path:
             - /resources
             - /test-resources
-          url: http://sapfioriprod.etecsa.cu:8000/sap/bc/ui5_ui5/sap/zevents # url: https://fiori.sap.etecsa.cu
-          version: "" # The UI5 version, for instance, 1.78.1. Empty string means latest version
+          url: http://sapfioriprod.etecsa.cu:8000/sap/bc/ui5_ui5/sap/zevents
+          version: ""
         backend:
           - path: /sap/opu/odata
             url: http://192.168.97.58:8000
