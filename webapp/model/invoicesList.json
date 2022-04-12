@@ -1,39 +1,27 @@
-{
-    "List": [
-        {
-            "ShipName": "Tuxpant",
-            "Country": "Cuba",
-            "Price": "50.20"
-        },
-        {
-            "ShipName": "Northwale",
-            "Country": "UK",
-            "Price": "105.87"
-        }, 
-        {
-            "ShipName": "Athalanta",
-            "Country": "Usa",
-            "Price": "70.13"
-        },        
-        {
-            "ShipName": "Calgary",
-            "Country": "Canada",
-            "Price": "250.58"
-        },
-        {
-            "ShipName": "Moscuova",
-            "Country": "Rusia",
-            "Price": "1.45"
-        },
-        {
-            "ShipName": "Mocursie",
-            "Country": "Francia",
-            "Price": "185.42"
-        },
-        {
-            "ShipName": "Gerncia",
-            "Country": "España",
-            "Price": "101.35"
-        }
-    ]
-}
+[
+    {
+        "Shipname": "Tuxpant",
+        "Country": "Mexico",
+        "Value": "50.20"
+    },
+    {
+        "Shipname": "Northwale",
+        "Country": "UK",
+        "Value": "105.87"
+    }, 
+    {
+        "Shipname": "Athalanta",
+        "Country": "Usa",
+        "Value": "70.13"
+    },        
+    {
+        "Shipname": "Calgary",
+        "Country": "Canada",
+        "Value": "250.58"
+    },
+    {
+        "Shipname": "Gerncia",
+        "Country": "España",
+        "Value": "101.35"
+    }
+]

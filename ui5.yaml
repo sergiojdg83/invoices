@@ -15,7 +15,7 @@ server:
           url: http://sapfioriprod.etecsa.cu:8000/sap/bc/ui5_ui5/sap/zevents
           version: ""
         backend:
-          - path: /sap/opu/odata
+          - path: /sap/opu/odata/sap/ZOD_INV_LIST_SRV
             url: http://192.168.97.58:8000
     - name: fiori-tools-appreload
       afterMiddleware: compression
